@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading{
+    margin: 30px 0;
+}
+.heading .extraOne{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+.heading .uploadImage input{
+    width: 150px;
+    height: 182px;
+    background-color: green;
+}
+.heading .name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+.heading input {
+    border: 1px solid blue;
+    padding: 10px;  
+    margin-top: 5px; 
+}
+.heading .Profession {
+    margin-top:30px ;
+}
+.heading .Profession input{
+    width: 400px;
+}
+.heading .extraThree{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+}
+.heading .extraFour{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+}
+.heading .extraFour .Email input{
+    width: 400px;
+}

@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.details {
+    margin: 10px;
+}
+
+.details .disabled {
+    visibility: hidden;
+}
+
+.details .btns button {
+    width: 300px;
+    padding: 10px;
+}
+
+.details .btns {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}

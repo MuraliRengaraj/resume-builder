@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.DetailsMenuContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.DetailsMenuContainer div{
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+}
+.DetailsMenuContainer div #num{
+    margin: 0 5px;
+    background-color: green;
+    border: 1px solid green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DetailsMenuContainer #line{
+    transform: rotate(90deg);
+}

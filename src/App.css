@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.appContainer{
+    margin: 50px;
+}
+.info{
+    height: auto;
+}
+.all-templates{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    row-gap: 50px;
+}
+.template{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background-color: rosybrown;
+    cursor: pointer;
+}
+.template span{
+    position: absolute;
+    border: 1px solid red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

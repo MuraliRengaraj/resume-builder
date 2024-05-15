@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.workHistory{
+    margin-top:20px;
+}
+.workHistory .extraOne,
+.workHistory .extraTwo,
+.workHistory .date{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.workHistory .extraTwo,
+.workHistory .date{
+    margin-top: 30px;
+}
+.workHistory input {
+    border: 1px solid blue;
+    padding: 10px;  
+    margin-top: 5px; 
+    width: 290px;
+}

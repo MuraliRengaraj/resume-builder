@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tempTwoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tempTwoContainer .tempPreviewContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: scroll;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide {
+    padding: 10px;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempName {
+    display: flex;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempName .tempFirstName p::after {
+    content: " ";
+    white-space: pre;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempContact .tempAddress {
+    display: flex;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempContact .tempAddress .tempCity p::after {
+    content: ",";
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempContact .tempAddress .tempCountry p::before {
+    content: " ";
+    white-space: pre;
+}
+
+.tempTwoContainer .tempHeader {
+    font-size: large;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+.tempTwoContainer .tempSecondHeader {
+    font-size: large;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempExtra,
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempEducation .tempGraduationDate {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempWorkHistory .tempDates .tempStartDate p::after,
+.tempTwoContainer .tempPreviewContainer .tempFullSide .tempEducation .tempGraduationDate .tempGraduationStartDate p::after {
+    content: " - ";
+    white-space: pre;
+}
+
+iframe {
+    width: 200px;
+    height: 500px;
+}
+
+@media print{
+    body{
+        visibility: hidden;
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+    .tempFullSide{
+        visibility: visible;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        margin: 0%;
+    }
+    @page {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
